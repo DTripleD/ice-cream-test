@@ -1,0 +1,55 @@
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.bg{
+    background-color: #84A178;
+    padding: 43px 109px;
+    border-radius: 24px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #84A178;
+}
+
+
+#cf {
+    position: relative;
+    height: 281px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+#cf img {
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#cf img.top {
+    animation-name: cfFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+}
+
+
+@keyframes cfFadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
